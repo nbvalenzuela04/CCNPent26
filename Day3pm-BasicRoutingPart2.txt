@@ -255,7 +255,7 @@ end
 ##########  IPv6 BGP    ########
 
 
-@ISP4
+@ISP4/google
 conf t
 ipv6 unicast-routing
 int lo4
@@ -271,7 +271,8 @@ address-family ipv6
  neigh b:2:4:b::2 activate
  neigh b:1:4:b::4 activate
  network b55::1/128
- network 2001:4860:4860::/64
+ network 2001:4860:4860::8888/128
+ network 8:8:8:8::8888/128
  network b:3:4:b::/64
  network b:2:4:b::/64
  network b:1:4:b::/64
